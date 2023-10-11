@@ -50,16 +50,13 @@
     font-size: 18px;
     font-style: normal;
     line-height: 24.3px;
-}
-
-address a {
     text-underline-offset: 4px;
 }
 
 .overlay {
     position: absolute;
-    inset: 0;
     z-index: -1;
+    inset: 0;
     width: 100%;
     height: 100%;
     background-color: #000; 
@@ -68,11 +65,11 @@ address a {
 
 .cover {
     position: relative;
-    z-index: -2;
+    z-index: 0;
     width: 1440px;
     display: flex;
     padding: 165px 50px 50px 50px;
-    height: 757px;
+    min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-position: right center;
@@ -80,14 +77,12 @@ address a {
 }
 
 .cover_title {
-    position: relative;
-    z-index: 1;
     display: flex;
+    position: absolute;
+    z-index: 1;
     flex-direction: column;
     width: 1340px;
     font-weight: 700px;
-    position: absolute;
-    z-index: 1;
     color: #FFF;
     font-size: 100px;
     letter-spacing: 30px;
@@ -121,11 +116,11 @@ address a {
 
 .cover_description {
     min-width: 968px;
-    min-height: 52px;
     display: flex;
     align-items: end;
     padding-bottom: 12px;
     padding-left: 372px;
+    z-index: 1;
 }
 
 .cover_description-text {
@@ -140,8 +135,6 @@ address a {
 }
 
 .bet-button {
-    position: absolute;
-    z-index: 1;
     right: 50px;
     transform: translateY(27%);
     background-color: transparent;
@@ -157,7 +150,6 @@ address a {
 
 .lots {
     width: 1340px;
-    height: 579px;
     margin: 180px 50px 0px 50px;
 }
 
@@ -178,7 +170,7 @@ address a {
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: 25px;
-    height: 450px;
+    min-height: 450px;
     list-style: none;
 }
 
@@ -204,24 +196,20 @@ address a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: 100% auto
 }
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto
 }
 
 .card_title {
@@ -258,7 +246,6 @@ address a {
 
 .about {
     width: 1340px;
-    height: 487px;
     margin: 181px 50px 180px 50px;
     display: flex;  
 }
@@ -316,8 +303,7 @@ address a {
 
 .footer {
     width: 1340px;
-    height: 97px;
-    margin: 180px 50px 90px 50px;
+    margin: 185px 50px 90px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -329,7 +315,8 @@ address a {
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
-    line-height: 24.3px
+    line-height: 24.3px;
+    text-underline-offset: 4px;
 }
 
 .footer_menu-list {
