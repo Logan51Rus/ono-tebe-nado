@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
   font-family: Raleway;
   src:
@@ -15,3 +16,22 @@
   font-weight: bold;
   font-display: swap;
 }
+=======
+@font-face {
+  font-family: Raleway;
+  src:
+    url(./Raleway-Regular.woff2) format('woff2'),
+    url(./Raleway-Regular.woff) format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Raleway;
+  src:
+    url(./Raleway-Bold.woff2) format('woff2'),
+    url(./Raleway-Bold.woff) format('woff');
+  font-weight: bold;
+  font-display: swap;
+}
+>>>>>>> 304fd6fef1eb7df21c21b65fc1b0f7c96d88dad5
