@@ -78,7 +78,6 @@
 
 .cover_title {
     display: flex;
-    position: absolute;
     z-index: 1;
     flex-direction: column;
     width: 1340px;
@@ -120,6 +119,8 @@
     align-items: end;
     padding-bottom: 12px;
     padding-left: 372px;
+    position: absolute;
+    bottom: 52px;
     z-index: 1;
 }
 
